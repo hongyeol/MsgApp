@@ -8,14 +8,14 @@ import React, { Component } from 'react';
 import {
   AppRegistry,
   StyleSheet,
-  Text,
-  View
+  Text,TouchableOpacity
 } from 'react-native';
-
+import {Button,View} from './src/components/index';
 export default class MsgApp extends Component {
   render() {
     return (
-      <View style={styles.container}>
+      <View>
+
         <Text style={styles.welcome}>
           Welcome to React Native!
         </Text>
@@ -26,6 +26,8 @@ export default class MsgApp extends Component {
           Press Cmd+R to reload,{'\n'}
           Cmd+D or shake for dev menu
         </Text>
+                <Button onPress={() => {alert("Test")}} title={"test22"}  />
+
       </View>
     );
   }
